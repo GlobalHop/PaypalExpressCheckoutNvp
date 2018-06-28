@@ -546,6 +546,23 @@ class Api
     }
 
     /**
+     * Require: AUTHORIZATIONID
+     *
+     * @param array $fields
+     *
+     * @return array
+     */
+    public function refundTransaction(array $fields)
+    {
+        $fields['METHOD']  = 'RefundTransaction';
+
+        $this->addVersionField($fields);
+        $this->addAuthorizeFields($fields);
+
+        return $this->doRequest($fields);
+    }
+
+    /**
      * @param array $fields
      *
      * @throws HttpException
