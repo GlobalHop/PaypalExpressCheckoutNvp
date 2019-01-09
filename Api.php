@@ -50,7 +50,7 @@ class Api
     /**
      * A reversal has been canceled; for example, when you win a dispute and the funds for the reversal have been returned to you.
      */
-    const PAYMENTSTATUS_CANCELED_REVERSAL = 'Canceled-Reversal';
+    const PAYMENTSTATUS_CANCELED_REVERSAL = 'Canceled_Reversal';
 
     /**
      * The payment has been completed, and the funds have been added successfully to your account balance.
